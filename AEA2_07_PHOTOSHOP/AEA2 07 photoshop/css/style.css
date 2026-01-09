@@ -1,0 +1,251 @@
+body {
+    background: white;
+}/* */
+
+.logo {/* logo PHOTOSHOP */
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 20%;
+    background: rgb(32, 44, 64);
+    color: rgb(111, 168, 249);
+    text-align: center;
+    font-size: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 200px;
+    align-content: center;
+    letter-spacing: -4px;
+}
+
+
+/* EFECTOS */
+.contenedor{
+    width: 1100px;
+    margin: 50px auto;
+
+
+}
+.efecto {
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    float: left;
+
+
+}
+.efecto img{ 
+    width: 200px;
+    height: 200px;
+}
+
+
+ /*    FILTROS IMAGENES*/
+.desenfocar img {
+    -webkit-filter: blur(10px); /* Como es Experminetal se pone "-webkit" para Safari*/
+       -moz-filter: blur(10px); /* Como es Experminetal se pone "-moz" para Firefox*/    
+         -o-filter: blur(10px); /* Como es Experminetal se pone "-o" para Opera*/
+            filter: blur(10px);
+}
+.grises img{
+    filter: grayscale(100%);
+}
+
+.sombra img{
+    filter: drop-shadow(6px 6px 6px purple ); /* sombra: desplazamiento X, desplazamiento Y, difuminado y color */
+}
+
+.sepia img {
+    filter: sepia(100%);
+}
+
+.luminosidad img {
+    filter: brightness(200%);
+}
+
+.contraste img {
+    filter: contrast(200%);
+}
+
+.tono img{
+    filter: hue-rotate(90deg);
+}
+
+.invertir img {
+    filter: invert(100%);
+}
+.saturar img {
+    filter: saturate(200%);
+}
+
+.opacidad img {
+    filter: opacity(50%);
+}
+
+h1{
+    font-size: 40px;
+    background-color: gray;
+    text-align: center;
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fruta {
+    background-image:url(../img/fresa.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 208px;
+    height: 208px;
+    margin: auto;
+}
+.superpuesta{
+    background-image:url(../img/llimona.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 208px;
+    height: 208px;
+    margin: auto;
+}
+.multiplicar .superpuesta {
+    mix-blend-mode: multiply;
+}
+.trama .superpuesta {
+    mix-blend-mode: screen;
+}
+.superponer .superpuesta {
+    mix-blend-mode: overlay;
+}
+.oscurir .superpuesta {
+    mix-blend-mode: darken;
+}
+.aclarar .superpuesta {
+    mix-blend-mode: lighten;
+}
+.llumintensa .superpuesta {
+    mix-blend-mode: hard-light;
+}
+.llumsuau .superpuesta {
+    mix-blend-mode: soft-light;
+}
+.diferencia .superpuesta {
+    mix-blend-mode: difference;
+}
+.exlusio .superpuesta {
+    mix-blend-mode: exclusion;
+}
+.to .superpuesta {
+    mix-blend-mode: hue;
+}
+.saturació .superpuesta {
+    mix-blend-mode: saturation;
+}
+.color .superpuesta {
+    mix-blend-mode: color;
+}
+.lluminositat .superpuesta {
+    mix-blend-mode: luminosity;
+}     
+
+#multiplicar, #trama, #superposa, #oscurir, #aclarir, #llumintensa, #llumsuau, #colormesfosc, #colormesclar , #diferencia, #exclusio , #to, #saturacio, #color, #lluminositat {
+  width : 50px;
+  height: 25px ;
+  background: #ccc ;
+  position :relative ;
+  border-radius:12.5px ;
+  border : 1px double #999 ;
+  margin:auto ;
+  box-shadow: inset 0 0 5px black ;
+  
+}
+input[type=checkbox] {
+  visibility : hidden ;
+  display:none;
+  
+}
+
+label {
+  display :block;
+  width: 25px ;
+  height:25px;
+  --background: white ;
+  position :absolute ;
+  top:0 ; left: 0 ;
+  border-radius:12.5px; 
+  box-shadow: 5px 0 5px black ;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+input[type=checkbox]:checked+label {
+  display :block;
+  width:25px;
+  height:25px;
+  -o-animation: ;
+  --background: grey;
+  position :absolute ;
+  top:0 ; right:0 ; left: 26px ;
+  box-shadow: -2px 0 2px black ;
+}
+
+input[type=range]{
+  -webkit-appearance: none;
+  width:50%;
+  background:transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+-webkit-appearance: none;
+} 
+
+input[type=range]::focus {
+-webkit-appearance: none;
+} 
+input[type=range]::-ms-track {
+width:100%;
+cursor:pointer;
+} 
+
+
+
+input[type=range]::-webkit-slider-thumb {
+  border:2px dotted rgb(232, 226, 226); 
+  height:15px;
+  width:15px;
+  border-radius : 100px;
+  background: rgb(199, 13, 13); 
+  cursor :pointer;
+  margin-top:-4px;
+  box-shadow: 1px 1px 1px #000:
+} 
+
+
+input[type=range]::-webkit-slider-runnable-track{
+  width:100%;
+  height:10px;
+  cursor: pointer;
+  box-shadow:1px 1px 1px #000 ;
+  background:rgb(13, 92, 34);
+  border-radius:0.5px;
+  border: 2px groove rgb(60, 58, 58) ;
+}
+
+input[type=range]::-moz-slider-runnable-track{
+  width:100%;
+  height:8.4px;
+  cursor: pointer;
+  box-shadow:1px 1px 1px #000 ;
+  background: green;
+  border-radius:1.3px;
+  border:0.4px solid black ;
+}
+input[type=range]::-ms-track{
+  width:100%;
+  height:8.4px;
+  cursor: pointer;
+  box-shadow:1px 1px 1px #000 ;
+  background:rgb(32, 44, 64);
+  border-radius:1.3px;
+  border:0.4px solid black ;
+}
