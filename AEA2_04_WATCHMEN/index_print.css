@@ -1,0 +1,46 @@
+div {
+    width: 57mm;
+    height: 90mm;
+    background-color: rgb(160, 33, 154);
+    position: absolute;
+    z-index: 10 ;
+}
+#v1 {
+    left: 18mm;
+    top: 8mm;
+background-image: ;
+}
+#v2 {
+    left: 78mm;
+    top: 8mm;
+}
+#v3 {
+    left: 137mm;
+    top: 8mm;
+}
+#v4 {
+    left: 18mm;
+    top: 102mm;
+}
+#v5 {
+    left: 78mm;
+    top: 102mm;
+}
+#v6 {
+    left: 137mm;
+    top: 102mm;
+}
+#v7 {
+    left: 18mm;
+    top: 195mm;
+}
+#v8 {
+    left: 78mm;
+    top: 195mm;
+}
+#v9 {
+    left: 117mm;
+    top: 175mm;
+    background-color: floralwhite;
+    z-index: 3;
+}
