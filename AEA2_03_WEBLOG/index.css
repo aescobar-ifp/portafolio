@@ -173,7 +173,7 @@ h1 {
 @media (min-width: 481px) and (max-width: 1279px) 
  {
  #alternador {
-    display: visible ;
+    display: block ;
 
   }
   .menuhorizontal {
