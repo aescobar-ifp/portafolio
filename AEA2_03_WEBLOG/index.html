@@ -11,25 +11,33 @@
     </style>
    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    
     <h1>pagina del blog</h1>
+    
+      <main class="content">
+     
       <p>
 orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lor
   </p>
 
-<p>
+  <p>
   orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lor
   </p>
-<p>
+
+  <p>
+  orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lor
+  </p>
+
+  <p>
  orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lor
   </p>
-<p>
+
+  <p>
   orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lor
   </p>
-<p>
-orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lor
-  
-</p>
+  </main>
 <div id="alternador">
   <input type="checkbox" id="alterna">
   <label for="alterna">
@@ -39,15 +47,33 @@ orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
   </label>
   
   <ul class="desplega">
-    <li><a href="#">Opció1</a></li>
-    <li><a href="#">Opció2</a></li>       
-    <li><a href="#">Opció3</a></li>
-    <li><a href="#">Opció4</a></li>
-    <li><a href="#">Opció5</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>       
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
   </ul>
 </div>
 
 
+
+<div class="slider-control" aria-hidden="false">
+  <label for="textSize">zoom</label>
+  <input id="textSize" type="range" min="100" max="200" value="125">
 </div>
+
+<script>
+  const slider = document.getElementById('textSize');
+  const root = document.documentElement;
+  function updateSize() {
+    const val = slider.value; 
+    const size = (val/100) * 1.0; // multiplier
+    
+    root.style.setProperty('--para-scale', size);
+  }
+  slider.addEventListener('input', updateSize);
+  updateSize();
+</script>
+
 </body>
 </html>
