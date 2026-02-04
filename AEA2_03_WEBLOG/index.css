@@ -4,3 +4,111 @@ body{
 h1 {
     color: darkblue; 
 }
+
+#alternador {
+  width: 5rem ;
+  height: 5rem ;
+  background: #000000;
+  background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(33, 36, 19, 1) 50%, rgba(255, 255, 255, 1) 100%);
+  position: absolute ;
+  top : 0.5rem ;
+  left : 0.5rem ;
+  border-radius: 0.5rem ;
+  }
+
+#alternador b {
+  background:white ;
+  border-color:black;
+  display : block ;
+  width : 4rem ;
+  height : 0.5rem ;
+  margin-bottom : 0.5rem ;
+  margin-left: 0.5rem;
+  
+}
+
+input[type="checkbox"] {
+  visibility: hidden ;
+  
+}
+* {
+  font-family:Arial, sans-serif;
+  
+}
+#alternador ul {
+  background: grey ;
+  margin-top: 2rem ;
+  padding: 0;
+  width: 8rem ;
+
+  
+}
+#alternador li {
+
+    list-style-type:none;
+    background: #000000;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(33, 36, 19, 1) 50%, rgba(217, 217, 202, 1) 100%);
+    padding-left : 0rem ;
+    border: solid;
+    line-height:2rem ; 
+    margin-left:-20px;
+    text-align:center;
+    float: none;
+}
+#alternador a {
+    color: grey ;
+    font-weight: bold ;
+    border : black ;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+    
+ a:hover {
+      color : black;
+      
+    }
+#alternador li:hover 
+{
+  background : white ;
+
+}
+
+p {
+  text-align : left ;
+  font-size : 1.5rem ;
+  font-weight : bold ;
+  color : darkblue ;
+  margin-top: 5rem;
+  
+}
+    
+.desplega {
+  position : absolute ;
+  left : -10rem; 
+  opacity: 1 ;
+  transition : all .5s ease ;
+}
+#alternador label {
+  width: 5rem ;
+  height: 4rem ;
+  background: gold ;
+  top: 0rem ;
+  left : 0 ;
+  border-radius: 0.5rem ;
+  cursor: pointer ;
+  padding-top: 1rem ;
+  
+  
+}
+
+h1 {
+  text-align:center ;
+  
+}
+#alternador input[type=checkbox] : checked+label{
+  opacity:1;
+}
+
+#alternador input[type=checkbox]:checked+label~.desplega {
+  left:0 ;
+}
