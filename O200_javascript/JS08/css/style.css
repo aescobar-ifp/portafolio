@@ -1,0 +1,97 @@
+
+.cara {
+                width: 80px;
+                height: 80px;
+                font-size: 80px;
+                text-align: center;
+                margin: auto;
+                transform: rotateZ(0deg);
+                position: absolute;
+            }
+
+            #cub {
+                height: 80px;
+                width: 80px;
+                position: relative;
+                transform-style: preserve-3d;
+                transition: 1s;
+            }
+
+            .blava { 
+                background-color: blue;
+                transform-origin:left;
+                transform: translateZ(-80px);
+            
+            }
+            .groga { 
+                background-color: yellow; 
+                transform-origin:bottom;
+                transform: rotateX(90deg) ;
+            }
+            .vermella {
+                background-color: red; 
+                transform: rotateY(90deg);
+                transform-origin: left;
+            }
+            .rosa { 
+                display:block;
+                background-color: pink; 
+                color: black; 
+                transform:rotateY(-90deg);
+                transform-origin: right;
+            }
+
+            .lila { 
+                background-color: purple; 
+                transform:rotateY(-90deg);
+                transform-origin: top; 
+            }
+
+            .verda {
+                background: greenyellow;
+                transform: rotateX(0deg);
+            }
+
+            .contenidor{
+                margin: 160px;
+                width: 80px;
+                height: 80px;
+                -webkit-perspective:320px;
+                perspective: 160px;
+                margin: 10rem auto;
+            
+            }
+            
+            .joystick   {
+                position: relative;
+                background:silver;
+                height: 20rem;
+                width: 20rem;
+                margin: auto;
+
+            }
+            
+            .boto {
+                width : 6rem ;
+                height : 6rem ;
+                background :  skyblue ;
+                position : absolute ;
+            }
+
+            #amunt {
+                top : 0 ;
+                left : 7rem
+            }
+            #avall {
+                top :14rem ;
+                left: 7rem;
+            }
+            #esquerra {
+                top: 7rem;
+                left : 0rem ;
+            }
+
+            #dreta {
+                top: 7rem;
+                left: 14rem
+            }

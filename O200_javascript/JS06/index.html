@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS06</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin:0;
+            padding:0;
+            font-size: 10rem;
+            line-height: 15rem;
+            color: white;
+        }
+        #verd, #taronja, #varmell {
+            width: 13rem;
+            height: 13rem;
+            border-radius: 50%;
+
+        }
+
+        #verd  {
+            background-color: green;
+
+        }
+        #taronja {
+            background-color: orange;
+            
+        }
+        #varmell {
+            background-color: red;
+    
+        }
+        
+        #verd.actiu {
+            box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.8);
+        }
+        
+        #taronja.actiu {
+            box-shadow: 0 0 20px 5px rgba(255, 165, 0, 0.8);
+        }
+        
+        #varmell.actiu {
+            box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.8);
+        }
+        
+        ul {
+            width: 25%;
+            margin: 0 auto;
+            padding: 0;
+            float: left;
+            list-style-type: none;
+        }
+        
+        #txt {
+            width: 90rem;
+            height: 120rem;
+            margin: 10;
+            padding: 3rem;
+            float: left;
+            overflow: hidden;
+        }
+    
+    
+    
+    
+            </style>
+
+</head>
+<body>
+    <ul>    
+        <li id="verd"></li>
+        <li id="taronja"></li>
+        <li id="varmell"></li>
+    </ul>
+    <p id="txt"></p>
+
+</body>
+
+<script type="text/javascript" language="javascript">
+
+    // definim les variables
+
+    document.getElementById('verd').addEventListener('click', verd);
+    document.getElementById('taronja').addEventListener('click', taronja);
+    document.getElementById('varmell').addEventListener('click', varmell)
+
+
+
+    // creem les funcions 
+
+    function verd() {
+        document.body.style.backgroundColor = 'green';
+        document.getElementById('txt').innerHTML = "PA DELANTE";
+        document.getElementById('verd').style.border="solid 10px white";
+        document.getElementById('taronja').style.border="solid 10px transparent";
+        document.getElementById('varmell').style.border="solid 10px transparent";
+        document.getElementById('verd').style.box.Shadow="inset 20px 20px 20px rgb(255, 255, 0, 0.8) ";
+        
+
+
+
+    }
+
+    function taronja() {
+        document.body.style.backgroundColor = 'orange';
+        document.getElementById('txt').innerHTML = "PA TRAS";
+        document.getElementById('taronja').style.border="solid 10px white";
+        document.getElementById('verd').style.border="solid 10px transparent";
+        document.getElementById('varmell').style.border="solid 10px transparent";
+        document.getElementById('verd').style.boxShadow="inset 20px 20px 20px rgba(0, 255, 0, 0.8)";
+        document.getElementById('taronja').style.boxShadow="inset 20px 20px 20px rgb(255, 165, 0, 0.8)";
+
+     }    
+
+    function varmell() {
+        document.body.style.backgroundColor = 'red';
+        document.getElementById('txt').innerHTML = "STOP";
+        document.getElementById('varmell').style.border="solid 10px white";
+        document.getElementById('verd').style.border="solid 10px transparent";
+        document.getElementById('taronja').style.border="solid 10px transparent";
+        document.getElementById('varmell').style.boxShadow="inset 20px 20px 20px rgb(255, 0, 0, 0.8)";
+
+     }
+
+</script>
+
+</html>

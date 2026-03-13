@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS07</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            color: rgb(172, 162, 162);
+            font-size: 1.2rem;
+        }
+        #sol{
+            width: 2rem;
+            height: 2rem;
+            background-color: rgb(255, 108, 4);
+            border-radius: 50%;
+            float:left;
+            margin: 1rem;
+        }
+        #lluna{
+            width: 2rem;
+            height: 2rem;
+            background-color: transparent;
+            border-radius: 50%;
+            float: left;
+            box-shadow: 0.5rem 0rem 0 silver;
+            margin: 1rem;
+            
+        }
+
+        ul{
+            display: inline-block;
+            margin:0rem ;
+            float:right;
+            color: grey;
+        }
+        li{
+            display:inline-block;
+            margin :1rem ;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        #txt {
+            width: 40rem;
+            margin: 5rem auto 1rem auto;
+            clear: both;
+        }
+        
+        
+    </style>
+
+</head>
+
+
+<body>
+
+ <div id="sol"></div>   
+ <div id="lluna"></div>
+
+ <ul>
+    <li id="a">A</li>
+    <li id="aa">AAA</li>
+    <li id="aaa">AAA</li>
+ </ul>
+ 
+ <p id="txt">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odio nihil dolor quia officiis, veniam eaque eligendi incidunt pariatur inventore nisi consequatur, nam voluptatum ex aliquid reprehenderit? Excepturi, quo amet.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate doloremque, minus rem harum sit dolore eum id, necessitatibus officiis qui itaque, voluptate vero aperiam! Maxime saepe itaque reiciendis ipsa libero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere assumenda ipsa? Consectetur fuga laborum temporibus nisi? Tenetur maxime ea incidunt, perspiciatis eum ipsa totam, quae quibusdam id tempore libero.
+</p>
+    
+</body>
+
+<script>
+
+
+document.getElementById('lluna').addEventListener('click', silver);
+document.getElementById('sol').addEventListener('click', taronja);
+
+function silver(){
+        document.body.style.backgroundColor = 'black';
+        document.getElementById('text').style.color = 'silver';
+        document.getElementById('lluna').style.boxShadow = '0.5rem 0rem 0 white';
+        document.getElementById('a').style.color = 'white';
+        document.getElementById('aa').style.color = 'white';
+        document.getElementById('aaa').style.color = 'white';
+
+
+
+
+}
+function taronja(){
+        document.body.style.backgroundColor = 'yellow';
+        document.getElementById('text').style.color = 'orange';
+        document.getElementById('lluna').style.boxShadow = '0.5rem 0rem 0 silver';
+        document.getElementById('a').style.color = 'black';
+        document.getElementById('aa').style.color = 'black';
+        document.getElementById('aaa').style.color = 'black';
+
+}
+
+///////////////
+//definim events 
+
+document.getElementById('a').addEventListener('click',reduir);
+document.getElementById('aa').addEventListener('click',normal);
+document.getElementById('aaa').addEventListener('click',augmentar);
+
+
+
+//creem//
+
+function reduir(){
+    document.getElementById('txt').style.fontSize = '0.5rem';
+}
+function normal(){
+    document.getElementById('txt').style.fontSize = '1rem';
+}
+function augmentar(){               
+    document.getElementById('txt').style.fontSize = '1.6rem';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
