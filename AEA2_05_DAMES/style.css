@@ -8,7 +8,7 @@
 .filera:nth-child(2n+1){
     width: 800px;
     height: 100px;
-    background-color: rgb(0, 255, 42);
+    background-color: rgb(255, 255, 255);
 }
 
 .filera:nth-child(2n) {
@@ -70,7 +70,7 @@
     background-color: rgb(0, 255, 72);
 }
 
-.filera: :nth-child(3) .fitxa, .filera:nth-child(4) .fitxa, .filera:nth-child(5) .fitxa, .filera:nth-child(6).fitxa{
+.filera:nth-child(3) .fitxa, .filera:nth-child(4) .fitxa, .filera:nth-child(5) .fitxa, .filera:nth-child(6).fitxa{
     display:none
 }
 .filera:nth-child(n+3):nth-child(-n+6) .fitxa {
@@ -92,7 +92,7 @@
 .filera:nth-child(7) .fitxa:hover {
     top: -100px
 }
-.filera: nth-child(8)-fitxa:hover{
+.filera:nth-child(8)-fitxa:hover{
     top: -200px;
 }
 
